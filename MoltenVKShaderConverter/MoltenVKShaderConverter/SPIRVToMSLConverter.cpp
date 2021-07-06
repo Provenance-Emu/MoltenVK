@@ -92,6 +92,7 @@ MVK_PUBLIC_SYMBOL SPIRVToMSLConversionOptions::SPIRVToMSLConversionOptions() {
 #endif
 
 	mslOptions.pad_fragment_output_components = true;
+	mslOptions.use_framebuffer_fetch_subpasses = true;
 }
 
 MVK_PUBLIC_SYMBOL bool mvk::MSLShaderInterfaceVariable::matches(const mvk::MSLShaderInterfaceVariable& other) const {
